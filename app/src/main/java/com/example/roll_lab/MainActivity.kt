@@ -10,13 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*val rollButton: Button = findViewById(R.id.button)
+        val rollButton: Button = findViewById(R.id.button)
         rollButton.setOnClickListener {
             rollDice()
-        }*/
+        }
     }
 
-   /* private fun rollDice() {
+    private fun rollDice() {
         val dice = Dice(6)
         val diceRoll = dice.roll()
         // Update the TextView with the dice roll
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             5 -> diceImage.setImageResource(R.drawable.dice_5)
             6 -> diceImage.setImageResource(R.drawable.dice_6)
         }
-    }*/
+    }
 }
 class Dice(private val numSides: Int) {
 
